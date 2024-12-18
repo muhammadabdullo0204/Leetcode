@@ -50,7 +50,7 @@
 
 .box-text p {
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     
 }
 
@@ -363,7 +363,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 175px;
+        margin-top: 350px;
 
 
         gap: 50px;
@@ -466,3 +466,14 @@
 
 
 }
+@media only screen and (max-width:420px) {
+    .box-3-mini{
+        margin-top: 75px;
+    }
+
+}
+@media only screen and (max-width:267px)  {
+    .box-3-mini{
+        margin-top: 250px;
+    }
+  }
