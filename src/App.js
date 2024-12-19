@@ -8,6 +8,7 @@ import Signin from './Sign-in/SignIn';
 import Register from './Sing-up/SignUp';
 import Password from './Forget-password/Password';
 import Copyright from './Copyright/Copyright';
+import Base from './Base/Base.jsx'
 
 import './Navbar/Navbar.css';
 import './Footer/Footer.css';
@@ -16,21 +17,29 @@ import './Login/Login.css';
 import './Sign-in/SignIn.css';
 import './Sing-up/SignUp.css';
 import './Forget-password/Password.css';
+import './Main/Main.css'
+
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
 function App() {
+
+
+
   return (
     <Router>
-      <div>
+      <div id="root">
         <Routes>
-          <Route path="/" element={<><Navbar /><Main /><Footer /></>} />
-          <Route path="/Main" element={<><Navbar /><Main /><Footer /></>} />
-          
+          {/* <Route path="/" element={<><Navbar /><Main /><Footer /></>} />
+          <Route path="/Main" element={<><Navbar /><Main /><Footer /></>} /> */}
+           <Route path="/Main" element={<><Base></Base></>} /> 
+           <Route path="/" element={<><Base></Base></>} />
+
           <Route path="/Login" element={<><LoginNavbar /><Signin /><Copyright /></>} />
           <Route path="/Register" element={<><LoginNavbar /><Register /><Copyright /></>} />
           <Route path="/Password" element={<><LoginNavbar /><Password /><Copyright /></>} />
-                    <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
@@ -38,4 +47,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,9 +1,10 @@
 .Main {
     width: 100%;
-    height: 100vh;
+   
     background-image: url('../images/background.png');
     background-size: cover;
     background-position: center;
+    
 }
 
 .Main-container {
@@ -50,7 +51,7 @@
 
 .box-text p {
     color: #fff;
-    margin-bottom: 120px;
+    
     
 }
 
@@ -472,7 +473,7 @@
     }
 
 }
-@media only screen and (max-width:267px)  {
+@media only screen and (max-width:293px)  {
     .box-3-mini{
         margin-top: 250px;
     }

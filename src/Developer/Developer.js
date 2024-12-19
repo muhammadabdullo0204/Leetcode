@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import MonacoEditor from '@monaco-editor/react';
+import FullHeight from "react-full-height";
 
 function Developer() {
+
+
   const [code, setCode] = useState('');
   const [output, setOutput] = useState('');
   const [language, setLanguage] = useState('python'); 
@@ -31,7 +34,9 @@ function Developer() {
     }
   };
 
+
   return (
+
     <div className="Developer"  id='Developer'>
       <div className="Developer-container">
         <div className="Developer-box">
